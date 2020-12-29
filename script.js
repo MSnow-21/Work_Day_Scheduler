@@ -95,13 +95,81 @@ buttonFive.addEventListener("click", function(event){
 
 // Assigning variable and adding text content for header date
 
-var m = moment().format("dddd, MMMM Do YYYY")
+var m = moment().format("dddd, MMMM Do YYYY");
 
 $("#currentDay").text(m);
 
 console.log(m);
 
-// 
+// testing solutions for the first hour of work
+
+// Finding hour from current moment function time - see moment documentation for Gets
+
+var hour = moment().hours()
+console.log(hour);
+
+// testing variables
+
+// var a = moment();
+// var b = a.clone();
+// console.log(b.toString());
+
+// var c = moment().format("hA");
+// console.log(c);
+
+// text for 9 am div
+
+// var nine = moment().hour(9);
+// var nineText = nine.format("hA");
+// $(".hournine").text(nineText);
+// console.log(nineText.toString());
+
+// checking on the difference in time
+// var a to variable nine
+// a.diff(nine, 'hours');
+// console.log(a.diff(nine, 'hours'));
+
+// checking on is before
+// var d = moment(a, 'hour').isBefore(nine, 'hour');
+// console.log(d);
+
+// Using textarea and number attribute to 
+
+$("textarea").each(function(){
+    var calendarHour = parseInt($(this).attr("time"))
+    if(calendarHour<hour){
+        $(this).addClass("past");
+    }else if(calendarHour>hour){
+        $(this).addClass("future");
+    }else{
+        $(this).addClass("present");
+    }
+})
+
+// Getting items from local storage after refresh
+
+$("#9amtext").val(localStorage.getItem("9amtext"));
+
+$("#10amtext").val(localStorage.getItem("10amtext"));
+
+$("#11amtext").val(localStorage.getItem("11amtext"));
+
+$("#12pmtext").val(localStorage.getItem("12pmtext"));
+
+$("#1pmtext").val(localStorage.getItem("1pmtext"));
+
+$("#2pmtext").val(localStorage.getItem("2pmtext"));
+
+$("#3pmtext").val(localStorage.getItem("3pmtext"));
+
+$("#4pmtext").val(localStorage.getItem("4pmtext"));
+
+$("#5pmtext").val(localStorage.getItem("5pmtext"));
+
+
+
+
+
 
 
 
