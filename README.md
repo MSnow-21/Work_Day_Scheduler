@@ -8,4 +8,4 @@ Application Title and Day of Week
 ![](assets/imgs/wdschtitle.png)
 
 Entering in a scheduled activity into the text area
-![](assets/imgs/wdschfirsthour)
+![](assets/imgs/wdschfirsthour.png)
