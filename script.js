@@ -101,39 +101,12 @@ $("#currentDay").text(m);
 
 console.log(m);
 
-// testing solutions for the first hour of work
-
 // Finding hour from current moment function time - see moment documentation for Gets
 
 var hour = moment().hours()
 console.log(hour);
 
-// testing variables
-
-// var a = moment();
-// var b = a.clone();
-// console.log(b.toString());
-
-// var c = moment().format("hA");
-// console.log(c);
-
-// text for 9 am div
-
-// var nine = moment().hour(9);
-// var nineText = nine.format("hA");
-// $(".hournine").text(nineText);
-// console.log(nineText.toString());
-
-// checking on the difference in time
-// var a to variable nine
-// a.diff(nine, 'hours');
-// console.log(a.diff(nine, 'hours'));
-
-// checking on is before
-// var d = moment(a, 'hour').isBefore(nine, 'hour');
-// console.log(d);
-
-// Using textarea and number attribute to 
+// Using textarea and number attribute to check against hour
 
 $("textarea").each(function(){
     var calendarHour = parseInt($(this).attr("time"))

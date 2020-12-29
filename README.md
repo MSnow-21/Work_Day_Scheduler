@@ -9,3 +9,9 @@ Application Title and Day of Week
 
 Entering in a scheduled activity into the text area
 ![](assets/imgs/wdschfirsthour.png)
+
+Displaying the present hour text area background color
+![](assets/imgs/wdschpresent.png)
+
+Displaying future hours text area background color
+![](assets/imgs/wdschfuture.png)
