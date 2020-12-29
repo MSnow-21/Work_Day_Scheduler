@@ -15,3 +15,6 @@ Displaying the present hour text area background color
 
 Displaying future hours text area background color
 ![](assets/imgs/wdschfuture.png)
+
+Displaying an example where the day has all three background colors shown
+![](assets/imgs/wdschfullday.png)
